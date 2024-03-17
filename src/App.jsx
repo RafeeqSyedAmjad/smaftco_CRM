@@ -1,12 +1,15 @@
 
+import { Toaster } from 'react-hot-toast'
 import './App.css'
+import { AppRoutes } from './routes/AppRoutes'
 
 function App() {
 
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <div>
+      <AppRoutes/>
+      <Toaster/>
+    </div>
   )
 }
 
