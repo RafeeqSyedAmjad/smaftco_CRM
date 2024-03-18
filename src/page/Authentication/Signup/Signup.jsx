@@ -53,9 +53,11 @@ function Signup() {
                 <SelectTrigger id="company">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="smafitco">Smafitco</SelectItem>
-                  <SelectItem value="other">Other</SelectItem>
+                <SelectContent position="bottom">
+                  <SelectItem value="smaftco">Smaftco</SelectItem>
+                  <SelectItem value="360">360</SelectItem>
+                  <SelectItem value="AKA">AKA</SelectItem>
+                  <SelectItem value="PMC">PMC</SelectItem>
                 </SelectContent>
               </Select>
             </div>
