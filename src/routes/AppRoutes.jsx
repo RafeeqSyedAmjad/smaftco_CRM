@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { Login, ResetPassword, Signup } from "./importPages"
+import { Dashboard, Login, ResetPassword, Signup } from "./importPages"
 import { Route, Routes } from "react-router"
 
 
@@ -30,6 +30,12 @@ export const AppRoutes = () => {
                     <ResetPassword/>
                 </Suspense>
             }/>
+
+            <Route path='/dashboard' element={
+                <Suspense fallback="Loading Dashboard...">
+                    <Dashboard />
+                </Suspense>
+            } />
         </Routes>
     )
 
