@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { Dashboard, Login, ResetPassword, Signup } from "./importPages"
+import {Dashboard, HomePage, Login, ResetPassword, Signup} from "./importPages"
 import { Route, Routes } from "react-router"
 
 
@@ -7,12 +7,12 @@ import { Route, Routes } from "react-router"
 export const AppRoutes = () => {
     return (
         <Routes>
-            {/* <Route path = "/" 
+            <Route path = "/" 
             element={
-            <Suspense>
-
+            <Suspense fallback = "Loading HomePage..">
+                <HomePage/>
             </Suspense>}
-            /> */}
+            />
 
             <Route path='/login' element={
                 <Suspense fallback="Loading Login..." >
