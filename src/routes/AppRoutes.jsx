@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import {Dashboard, HomePage, Login, ResetPassword, Signup} from "./importPages"
+import {Category, Dashboard, HomePage, Login, MultiBranchWorkshop, ResetPassword, Signup, SingleWorkshop} from "./importPages"
 import { Route, Routes } from "react-router"
 
 
@@ -36,6 +36,26 @@ export const AppRoutes = () => {
                     <Dashboard />
                 </Suspense>
             } />
+            <Route path='/category' element={
+                <Suspense fallback="Loading Category...">
+                    <Category />
+                </Suspense>
+            } />
+
+            <Route path='/workshopregistration' element={
+                <Suspense fallback="Loading Workshop...">
+                    <SingleWorkshop />
+                </Suspense>
+            } />
+
+            <Route path='/companyregistration' element={
+                <Suspense fallback="Loading Workshop...">
+                    <MultiBranchWorkshop />
+                </Suspense>
+            } />
+
+
+
         </Routes>
     )
 
