@@ -26,6 +26,18 @@ export default function Header() {
         Navigate('/');
     }
 
+    const redirectToCompanies = () => {
+        Navigate('/companies')
+    }
+
+    const redirectToLeads =() => {
+        Navigate('/leads')
+    }
+
+    const redirecttoEmployees =() => {
+        Navigate('/employees')
+    }
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -80,12 +92,15 @@ export default function Header() {
                     <Link>
                         Campaign
                     </Link>
-                    <Link>
+                    <button onClick={redirectToCompanies}>
                         Companies
-                    </Link>
-                    <Link>
+                    </button>
+                    <button onClick={redirectToLeads}>
+                        Leads
+                    </button>
+                    <button onClick={redirecttoEmployees}>
                         Employees
-                    </Link>
+                    </button>
 
 
                 </Popover.Group>
@@ -136,15 +151,25 @@ export default function Header() {
                                     Campaign
                                 </a>
                                 <a
-                                    href="#"
+                                    
                                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                                    onClick={redirectToCompanies}
                                 >
                                     Companies
                                 </a>
 
                                 <a
+
+                                    className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                                    onClick={redirectToLeads}
+                                >
+                                    Leads
+                                </a>
+
+                                <a
                                     href="#"
                                     className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
+                                    onClick={redirecttoEmployees}
                                 >
                                     Employees
                                 </a>

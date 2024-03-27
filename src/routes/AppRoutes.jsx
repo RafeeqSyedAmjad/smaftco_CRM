@@ -1,6 +1,9 @@
 import { Suspense } from "react"
-import {Category, Dashboard, HomePage, Login, MultiBranchWorkshop, ResetPassword, Signup, SingleWorkshop} from "./importPages"
+import {Category, Companies, Dashboard, HomePage, Login, MultiBranchWorkshop, ResetPassword, Signup, SingleWorkshop} from "./importPages"
 import { Route, Routes } from "react-router"
+import { CompanyView, Leads, LeadsView } from "@/page/PageExport"
+import Employees from "@/page/Employees/Employees"
+import EmployeeView from "@/page/Employees/EmployeeView"
 
 
 
@@ -51,6 +54,42 @@ export const AppRoutes = () => {
             <Route path='/companyregistration' element={
                 <Suspense fallback="Loading Workshop...">
                     <MultiBranchWorkshop />
+                </Suspense>
+            } />
+
+            <Route path='/companies' element={
+                <Suspense fallback="Loading Companies...">
+                    <Companies />
+                </Suspense>
+            } />
+
+            <Route path='/companyview' element={
+                <Suspense fallback="Loading Companies...">
+                    <CompanyView />
+                </Suspense>
+            } />
+
+            <Route path='/leads' element={
+                <Suspense fallback="Loading Companies...">
+                    <Leads />
+                </Suspense>
+            } />
+
+            <Route path='/leadsview' element={
+                <Suspense fallback="Loading Companies...">
+                    <LeadsView />
+                </Suspense>
+            } />
+
+            <Route path='/employees' element={
+                <Suspense fallback="Loading Companies...">
+                    <Employees />
+                </Suspense>
+            } />
+
+            <Route path='/employeeview' element={
+                <Suspense fallback="Loading Companies...">
+                    <EmployeeView />
                 </Suspense>
             } />
 
