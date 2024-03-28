@@ -10,5 +10,6 @@ const SingleWorkshop = lazy(()=> import('../page/Workshop/SingleWorkshop'))
 const MultiBranchWorkshop = lazy(()=> import('../page/Workshop/MultiBranchWorkshop'))
 const Companies = lazy(()=>import('../page/Companies/Companies') )
 const CompanyView = lazy(()=> import('../page/Companies/CompanyView'))
+const Campaign = lazy(()=>import('../page/Campaign/Campaign') )
 
-export { Login, Signup, ResetPassword, Dashboard, HomePage, Category, SingleWorkshop, MultiBranchWorkshop, Companies, CompanyView }
+export { Login, Signup, ResetPassword, Dashboard, HomePage, Category, SingleWorkshop, MultiBranchWorkshop, Companies, CompanyView, Campaign }

@@ -10,5 +10,6 @@ import Companies from "./Companies/Companies";
 import CompanyView from "./Companies/CompanyView";
 import Leads from "./Leads/Leads";
 import LeadsView from "./Leads/LeadsView";
+import Campaign from "./Campaign/Campaign";
 
-export { Login, Signup, ResetPassword, Dashboard, HomePage, Category, MultiBranchWorkshop, SingleWorkshop, Companies, CompanyView, Leads, LeadsView };
+export { Login, Signup, ResetPassword, Dashboard, HomePage, Category, MultiBranchWorkshop, SingleWorkshop, Companies, CompanyView, Leads, LeadsView, Campaign };

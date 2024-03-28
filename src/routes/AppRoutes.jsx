@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import {Category, Companies, Dashboard, HomePage, Login, MultiBranchWorkshop, ResetPassword, Signup, SingleWorkshop} from "./importPages"
+import {Campaign, Category, Companies, Dashboard, HomePage, Login, MultiBranchWorkshop, ResetPassword, Signup, SingleWorkshop} from "./importPages"
 import { Route, Routes } from "react-router"
 import { CompanyView, Leads, LeadsView } from "@/page/PageExport"
 import Employees from "@/page/Employees/Employees"
@@ -90,6 +90,12 @@ export const AppRoutes = () => {
             <Route path='/employeeview' element={
                 <Suspense fallback="Loading Companies...">
                     <EmployeeView />
+                </Suspense>
+            } />
+
+            <Route path='/campaign' element={
+                <Suspense fallback="Loading Campaign...">
+                    <Campaign />
                 </Suspense>
             } />
 

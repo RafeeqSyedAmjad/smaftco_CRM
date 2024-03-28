@@ -10,7 +10,7 @@ function FeedCards({ data }) {
                     <CardHeader>
                         <CardTitle>{item.title}</CardTitle>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="text-md">
                         {item.content.map((contentItem, index) => (
                             <p key={index}>{contentItem}</p>
                         ))}
